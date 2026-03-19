@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - Manipulação de dados</title>
+</head>
+<style>
+    body {
+        font: normal 20pt Arial;
+        background-color: rgb(105, 105, 170);
+        color: white;
+    }
+    h1 {
+        border: 10px solid black;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <script>
+            var nome = window.prompt("Qual é o seu nome?")
+    </script>
+
+    <h1>
+        <script>
+            document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras. <br>`)
+            document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}. <br>`)
+            document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}.`)
+        </script>
+    </h1>
+    
+</body>
+</html>
