@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <input type="text" name="display" id="display" placeholder="Digite ">
+        <div class="botoes">
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="C" id="clean">C</button>
+            
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button value="+">+</button>
+            
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button value="-">-</button>
+            <button value="0" id="zero">0</button>
+            <button value=".">.</button>
+            
+            <button value="*">*</button>
+            <button value="/">/</button>
+            
+            <button value="=" id="igual">=</button>
+            
+        </div>
+    </div>
+
+    <script>
+        var limpe = document.getElementById('clean')
+        var display = document.getElementById('display')
+        var botoes = document.querySelectorAll("button")
+
+        limpe.addEventListener('click', limpar)
+        botoes.forEach(bt => {
+            bt.addEventListener('click', calc)
+        });
+
+        function limpar() {
+            display.value = ''
+        }
+
+        function calc(evento) {
+            var valor = evento.target.value
+
+            if (valor === 'C') {
+                display.value = ''
+            }
+            else if (valor === '=') {
+                try {
+                    display.value = eval(display.value)
+                } catch {
+                    display.value = 'Erro'
+                }
+            }
+            else {
+                display.value += valor
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
