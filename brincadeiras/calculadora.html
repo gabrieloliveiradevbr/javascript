@@ -38,18 +38,12 @@
     </div>
 
     <script>
-        var limpe = document.getElementById('clean')
         var display = document.getElementById('display')
         var botoes = document.querySelectorAll("button")
 
-        limpe.addEventListener('click', limpar)
         botoes.forEach(bt => {
             bt.addEventListener('click', calc)
         });
-
-        function limpar() {
-            display.value = ''
-        }
 
         function calc(evento) {
             var valor = evento.target.value
@@ -68,8 +62,6 @@
                 display.value += valor
             }
         }
-
-
     </script>
 </body>
 
