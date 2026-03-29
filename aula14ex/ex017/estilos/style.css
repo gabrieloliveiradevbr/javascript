@@ -27,6 +27,7 @@ body {
 }
 
 section {
+    font-size: 25px;
     background-color: white;
     width: 500px;
 
@@ -35,6 +36,17 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
 
     margin-top: 20px;
+}
+
+div {
+    padding: 10px;
+}
+
+.botao {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
 }
 
 footer {
