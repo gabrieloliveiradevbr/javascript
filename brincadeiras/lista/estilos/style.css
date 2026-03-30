@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4e73df, #224abe);
+    color: #333;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* INPUTS */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* BOTÕES */
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.add {
+    background: #1cc88a;
+    color: white;
+}
+
+button.add:hover {
+    background: #17a673;
+}
+
+button.finalizar {
+    background: #e74a3b;
+    color: white;
+}
+
+button.finalizar:hover {
+    background: #c0392b;
+}
+
+/* LISTA */
+ul {
+    list-style: none;
+}
+
+ul li {
+    color: black;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background: #f1f1f1;
+}
+
+/* TOTAL */
+.total-box {
+    text-align: center;
+}
+
+#total {
+    font-size: 24px;
+    font-weight: bold;
+    color: #224abe;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+}

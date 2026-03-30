@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Caixa do Mercado</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🛒 Caixa do Mercado</h1>
+    </header>
+
+    <main class="container">
+
+        <!-- FORM -->
+        <section class="card">
+            <h2>Adicionar Produto</h2>
+
+            <div class="input-group">
+                <label>Produto</label>
+                <input type="text" id="produto" placeholder="Ex: Arroz">
+            </div>
+
+            <div class="input-group">
+                <label>Preço (R$)</label>
+                <input type="number" id="preco" placeholder="Ex: 10.50">
+            </div>
+
+            <div class="botoes">
+                <button class="add" onclick="adicionar()">Adicionar</button>
+                <button class="finalizar" onclick="finalizar()">Finalizar</button>
+            </div>
+        </section>
+
+        <!-- LISTA -->
+        <section class="card">
+            <h2>Lista de Compras</h2>
+            <ul id="lista"></ul>
+        </section>
+
+        <!-- TOTAL -->
+        <section class="card total-box">
+            <h2>Total</h2>
+            <p id="total">R$ 0.00</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto em JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
