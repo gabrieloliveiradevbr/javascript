@@ -10,14 +10,12 @@ body {
     color: #333;
 }
 
-/* HEADER */
 header {
     text-align: center;
     padding: 20px;
     color: white;
 }
 
-/* CONTAINER */
 .container {
     max-width: 900px;
     margin: 20px auto;
@@ -25,7 +23,6 @@ header {
     gap: 20px;
 }
 
-/* CARDS */
 .card {
     background: white;
     padding: 20px;
@@ -33,7 +30,6 @@ header {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* INPUTS */
 .input-group {
     margin-bottom: 15px;
 }
@@ -50,7 +46,6 @@ header {
     border: 1px solid #ccc;
 }
 
-/* BOTÕES */
 .botoes {
     display: flex;
     gap: 10px;
@@ -83,7 +78,6 @@ button.finalizar:hover {
     background: #c0392b;
 }
 
-/* LISTA */
 ul {
     list-style: none;
 }
@@ -99,7 +93,6 @@ ul li:hover {
     background: #f1f1f1;
 }
 
-/* TOTAL */
 .total-box {
     text-align: center;
 }
@@ -110,7 +103,6 @@ ul li:hover {
     color: #224abe;
 }
 
-/* FOOTER */
 footer {
     text-align: center;
     padding: 15px;
