@@ -12,9 +12,7 @@ const students = [
 
 const getScore = el => el.score
 
-const result = students
-    .map(getScore)
-    .map(Math.ceil)
+const result = students.map(getScore).map(Math.ceil)
 
 console.log(result)
 
